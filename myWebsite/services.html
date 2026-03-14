@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xizmatlar | Khasanboy</title>
+<meta name="description" content="SMM, logo dizayn, video montaj, mobilografiya va dasturlash xizmatlari.">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Loader -->
+<div id="loader" class="loader">
+  <div class="spinner"></div>
+</div>
+
+<!-- Floating Instagram -->
+<a class="float-wa" href="https://www.instagram.com/erknv_hd/" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+</a>
+<header class="header">
+  <div class="container nav">
+
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo-img" src="img/andijon.png" alt="Logo">
+      </a>
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <nav class="nav-links">
+      <a href="projects.html">Loyhalar</a>
+      <a href="about.html">Men haqimda</a>
+      <a href="services.html">Xizmatlar</a>
+      <a href="register.html">Ro‘yxatdan o‘tish</a>
+    </nav>
+
+    <!-- HAMBURGER -->
+    <div class="hamburger">
+      <img src="img/hamm.png" alt="Menu">
+    </div>
+
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu">
+  <a href="projects.html">Loyhalar</a>
+  <a href="about.html">Men haqimda</a>
+  <a href="services.html">Xizmatlar</a>
+  <a href="register.html">Ro‘yxatdan o‘tish</a>
+</div>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title">Xizmatlarim</h2>
+   <div class="grid">
+
+<div class="card">
+<img src="img/xizmat-1.jpg">
+<h3>SMM</h3>
+<p>Instagram kontent reja, target yo‘naltirish.</p>
+<a href="smm.html" class="card-btn">Batafsil <span>→</span></a>
+</div>
+
+<div class="card">
+<img src="img/andijon-logo.jpg">
+<h3>Logo Maker</h3>
+<p>Minimal va zamonaviy logo.</p>
+<a href="logo.html" class="card-btn">Batafsil <span>→</span></a>
+</div>
+
+<div class="card">
+<img src="img/xizmat-3.webp">
+<h3>Editor</h3>
+<p>Postlar va vizual tahrir.</p>
+<a href="editor.html" class="card-btn">Batafsil <span>→</span></a>
+</div>
+
+<div class="card">
+<img src="img/xizmat-4.jfif">
+<h3>Mobilograf</h3>
+<p>Telefon bilan professional video.</p>
+<a href="mobilograf.html" class="card-btn">Batafsil <span>→</span></a>
+</div>
+
+<div class="card">
+<img src="img/xizmat-6.webp">
+<h3>Dasturlash</h3>
+<p>Landing page va oddiy saytlar.</p>
+<a href="dasturlash.html" class="card-btn">Batafsil <span>→</span></a>
+</div>
+
+<div class="card">
+<img src="img/xizmat-5.jpg">
+<h3>Video Montaj</h3>
+<p>Reels / Shorts montaji.</p>
+<a href="montaj.html" class="card-btn">Batafsil <span>→</span></a>
+</div>
+
+</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-wrap">
+    <p>© 2026 • Create by <strong>Khasanboy</strong></p>
+    <div class="socials">
+      <a href="https://www.instagram.com/erknv_hd/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+      <a href="https://t.me/erknv_hd" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram"></a>
+      <a href="https://wa.me/998XXXXXXXXX" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"></a>
+    </div>
+  </div>
+</footer>
+<script>
+  // Loader
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    if (loader) loader.style.display = 'none';
+  });
+
+  // Theme toggle
+  const toggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+
+  const saved = localStorage.getItem('theme');
+  if (saved === 'light') {
+    root.classList.add('light');
+    toggle.textContent = '☀️';
+  }
+
+  toggle.addEventListener('click', () => {
+    root.classList.toggle('light');
+    const isLight = root.classList.contains('light');
+    toggle.textContent = isLight ? '☀️' : '🌙';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+</script>
+<script src="javascript.js"></script>
+</body>
+</html>
